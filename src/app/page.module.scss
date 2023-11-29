@@ -46,13 +46,8 @@
   justify-content: space-between;
 
   .buttonContainer {
-    width: 16rem;
+    width: 20rem;
     display: flex;
     justify-content: space-evenly;
-
-    button {
-      width: 6rem;
-      color: white;
-    }
   }
 }

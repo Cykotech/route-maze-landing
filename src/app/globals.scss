@@ -1,8 +1,15 @@
+:root {
+  --primary-color: hsl(295, 100%, 16%);
+  --primary-text: hsl(274, 3%, 15%);
+  --accent-text: hsl(47, 23%, 88%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-monserrat);
+  color: var(--primary-text);
 
   button {
     border: none;

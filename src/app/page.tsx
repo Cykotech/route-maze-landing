@@ -1,6 +1,9 @@
 import styles from './page.module.scss'
 import { roboto } from './fonts'
 
+import Button1 from './components/buttons/button1'
+import Button2 from './components/buttons/button2'
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -8,13 +11,13 @@ export default function Home() {
         <header className={styles.header}>
           {/* Will recreate the buttons as components */}
           <div className={styles.buttonContainer}>
-            <button className={styles.button}>Find Flights</button>
-            <button className={styles.button}>Find Hotels</button>
+            <Button1 type="Find Flights" />
+            <Button1 type="Find Hotels" />
           </div>
           <h1>RouteMaze</h1>
           <div className={styles.buttonContainer}>
-            <button className={styles.button}>Login</button>
-            <button className={styles.button}>Sign Up</button>
+            <Button1 type="Login" />
+            <Button2 type="Sign Up" />
           </div>
         </header>
         <div className={styles.textContainer}>
