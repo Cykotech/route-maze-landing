@@ -1,23 +1,22 @@
-import styles from './page.module.scss'
-import { roboto } from './fonts'
+import styles from "./page.module.scss";
+import { roboto } from "./lib/fonts";
 
-import Button1 from './components/buttons/button1'
-import Button2 from './components/buttons/button2'
+import { RectangleButton, TabButton } from "./components/buttons";
+import SearchBar from "./components/searchbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.banner}>
         <header className={styles.header}>
-          {/* Will recreate the buttons as components */}
           <div className={styles.buttonContainer}>
-            <Button1 type="Find Flights" />
-            <Button1 type="Find Hotels" />
+            <RectangleButton type="flight" />
+            <RectangleButton type="hotel" />
           </div>
           <h1>RouteMaze</h1>
           <div className={styles.buttonContainer}>
-            <Button1 type="Login" />
-            <Button2 type="Sign Up" />
+            <RectangleButton type="login" />
+            <RectangleButton type="register" />
           </div>
         </header>
         <div className={styles.textContainer}>
@@ -26,6 +25,14 @@ export default function Home() {
           <p>Special offers to suit your plan</p>
         </div>
       </div>
+      <div className={styles.searchContainer}>
+        <div className={styles.buttonContainer}>
+          <TabButton type="flight" />
+          <div className={styles.border}></div>
+          <TabButton type="hotel" />
+        </div>
+        <SearchBar />
+      </div>
     </main>
-  )
+  );
 }
