@@ -39,9 +39,10 @@ export function Dropdown(props: Dropdown) {
   const flightClassArray = ['Economy', 'First-Class', 'Business'];
   const id = props.id;
 
-  const tripDirectionMap = tripDirectionArray.map((element) => {
-    return <option>{element}</option>
-  })
+  // const tripDirectionMap = tripDirectionArray.map((element) => {
+  //   return <option>{element}</option>
+  // })
+
   return (
     <select>
       <option>One-Way</option>
