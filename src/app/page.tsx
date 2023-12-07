@@ -1,8 +1,10 @@
-import styles from "./page.module.scss";
-import { roboto } from "./lib/fonts";
+import { Button, TabButton } from "@components/Buttons";
 
-import { RectangleButton, TabButton } from "./components/buttons";
-import SearchBar from "./components/searchbar";
+import { HotelSVG } from "@/assets/svg/Hotel";
+import { PlaneSVG } from "@/assets/svg/Plane";
+import { SearchBar } from "@components/Inputs";
+import { roboto } from "../lib/fonts";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
@@ -10,13 +12,17 @@ export default function Home() {
       <div className={styles.banner}>
         <header className={styles.header}>
           <div className={styles.buttonContainer}>
-            <RectangleButton type="flight" />
-            <RectangleButton type="hotel" />
+            <Button>
+              <PlaneSVG color="white" /> Flight
+            </Button>
+            <Button>
+              <HotelSVG color="white" /> Hotels
+            </Button>
           </div>
           <h1>RouteMaze</h1>
           <div className={styles.buttonContainer}>
-            <RectangleButton type="login" />
-            <RectangleButton type="register" />
+            <Button>Login</Button>
+            <Button>Register</Button>
           </div>
         </header>
         <div className={styles.textContainer}>
@@ -27,9 +33,15 @@ export default function Home() {
       </div>
       <div className={styles.searchContainer}>
         <div className={styles.buttonContainer}>
-          <TabButton type="flight" />
+          <TabButton>
+            <PlaneSVG color="black" />
+            Flight
+          </TabButton>
           <div className={styles.border}></div>
-          <TabButton type="hotel" />
+          <TabButton>
+            <HotelSVG color="black" />
+            Hotel
+          </TabButton>
         </div>
         <SearchBar />
       </div>

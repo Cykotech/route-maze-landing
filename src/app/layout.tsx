@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { montserrat, roboto } from "./lib/fonts";
+import { montserrat, roboto } from "../lib/fonts";
 
 import "./globals.scss";
 
@@ -14,9 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${montserrat.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${roboto.variable}`}>
       <body>{children}</body>
     </html>
   );
