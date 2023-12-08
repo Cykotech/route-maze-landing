@@ -1,0 +1,31 @@
+@import "../../../../styles/theme.scss";
+
+.inputContainer {
+  width: fit-content;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  border: 2px solid $gray;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: none;
+  text-align: center;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.label {
+  width: fit-content;
+  position: relative;
+  top: -0.65rem;
+  margin-left: .75rem;
+  padding-inline: .25rem;
+  font-family: var(--font-roboto);
+  font-size: .875rem;
+  background-color: white;
+}

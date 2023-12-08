@@ -2,7 +2,7 @@ import { Button, TabButton } from "@components/Buttons";
 
 import { HotelSVG } from "@/assets/svg/Hotel";
 import { PlaneSVG } from "@/assets/svg/Plane";
-import { SearchBar } from "@components/Inputs";
+import { SearchBar } from "@components/SearchBar";
 import { roboto } from "../lib/fonts";
 import styles from "./page.module.scss";
 
@@ -22,7 +22,7 @@ export default function Home() {
           <h1>RouteMaze</h1>
           <div className={styles.buttonContainer}>
             <Button>Login</Button>
-            <Button>Register</Button>
+            <Button buttonType="secondary">Register</Button>
           </div>
         </header>
         <div className={styles.textContainer}>
@@ -35,7 +35,7 @@ export default function Home() {
         <div className={styles.buttonContainer}>
           <TabButton>
             <PlaneSVG color="black" />
-            Flight
+            Flights
           </TabButton>
           <div className={styles.border}></div>
           <TabButton>
