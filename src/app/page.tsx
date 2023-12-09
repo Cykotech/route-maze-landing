@@ -1,5 +1,6 @@
 import { Button, TabButton } from "@components/Buttons";
 
+import { Footer } from "@/components/Footer";
 import { HotelSVG } from "@/assets/svg/Hotel";
 import { PlaneSVG } from "@/assets/svg/Plane";
 import { SearchBar } from "@components/SearchBar";
@@ -45,6 +46,7 @@ export default function Home() {
         </div>
         <SearchBar />
       </div>
+      <Footer />
     </main>
   );
 }
