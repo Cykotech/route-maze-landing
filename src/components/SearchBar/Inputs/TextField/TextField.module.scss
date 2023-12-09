@@ -3,7 +3,6 @@
 .inputContainer {
   width: fit-content;
   height: 3.5rem;
-  margin-right: 1.5rem;
   border: 2px solid $gray;
   border-radius: 0.25rem;
   display: flex;
@@ -12,7 +11,16 @@
 
 .input {
   border: none;
-  text-align: center;
+  color: #1c1b1f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 16px;
+}
+
+.withoutLabel {
+  height: 100%;
 }
 
 .input:focus-visible {
@@ -23,9 +31,9 @@
   width: fit-content;
   position: relative;
   top: -0.65rem;
-  margin-left: .75rem;
-  padding-inline: .25rem;
+  margin-left: 0.75rem;
+  padding-inline: 0.25rem;
   font-family: var(--font-roboto);
-  font-size: .875rem;
+  font-size: 0.875rem;
   background-color: white;
 }

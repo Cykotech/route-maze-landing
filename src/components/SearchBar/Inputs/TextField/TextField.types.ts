@@ -1,5 +1,11 @@
-import { InputHTMLAttributes } from "react";
+import {
+  HTMLAttributes,
+  InputHTMLAttributes,
+  LabelHTMLAttributes,
+} from "react";
 
-export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
-  label: string;
+export interface TextFieldProps extends HTMLAttributes<HTMLDivElement> {
+  label?: string;
+  labelProps?: LabelHTMLAttributes<HTMLLabelElement>;
+  inputProps?: InputHTMLAttributes<HTMLInputElement>;
 }
