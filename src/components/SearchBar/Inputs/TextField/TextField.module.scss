@@ -13,11 +13,12 @@
 .input {
   border: none;
   text-align: center;
+  
+  &:focus-visible {
+    outline: none;
+  }
 }
 
-.input:focus-visible {
-  outline: none;
-}
 
 .label {
   width: fit-content;
