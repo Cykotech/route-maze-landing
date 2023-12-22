@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { DropDown } from "./Inputs/DropDown";
 import { TextField } from "./Inputs/TextField";
 import { Button } from "../Buttons";
-import { tempSearchAlert } from "../../util/utilities";
+// import { tempSearchAlert } from "../../util/utilities";
 
 import { SearchBarProps } from "./SearchBar.types";
 
@@ -41,11 +41,11 @@ export const SearchBar = ({ mode }: SearchBarProps) => {
     return (
       <>
         <div className={styles.searchbar}>
-          <TextField
+          {/* <TextField
             placeholder="NYC, New York"
             id="from"
             label="Origin"
-          />
+          /> */}
           <TextField
             placeholder="Los Angeles, California"
             id="destination"
@@ -72,11 +72,11 @@ export const SearchBar = ({ mode }: SearchBarProps) => {
             value={date2}
             handleChange={setDate2}
           />
-          <TextField
+          {/* <TextField
             placeholder="1"
             id="passengers"
             label="Number of Passengers"
-          />
+          /> */}
           <DropDown
             id="flight-class"
             flightClass={flightClass}
@@ -84,12 +84,12 @@ export const SearchBar = ({ mode }: SearchBarProps) => {
           />
         </div>
         <div className={styles.container}>
-          <Button
+          {/* <Button
             buttonType="colored"
             handleClick={tempSearchAlert}>
-            {/* <PointerSVG /> */}
+            <PointerSVG />
             Search
-          </Button>
+          </Button> */}
         </div>
       </>
     );
@@ -105,26 +105,26 @@ export const SearchBar = ({ mode }: SearchBarProps) => {
             value={destination}
             handleChange={setDestination}
           />
-          <TextField
+          {/* <TextField
             placeholder="1/1/2023"
             id="date1"
             label="Check In Date"
-          />
-          <TextField
+          /> */}
+          {/* <TextField
             placeholder="1/1/2023"
             id="date2"
             label="Check Out Date"
-          />
-          <TextField
+          /> */}
+          {/* <TextField
             placeholder="1"
             id="guests"
             label="Number of Guests"
-          />
-          <TextField
+          /> */}
+          {/* <TextField
             placeholder="1"
             id="rooms"
             label="Number of Rooms"
-          />
+          /> */}
         </div>
         <div className={styles.container}>
           <Button buttonType="colored">
