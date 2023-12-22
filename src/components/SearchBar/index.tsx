@@ -24,18 +24,18 @@ export const SearchBar = ({ mode }: SearchBarProps) => {
   const [date1, setDate1] = useState("");
   const [date2, setDate2] = useState("");
 
-  const today = new Date();
+  // const today = new Date();
 
-  useEffect(() => {
-    setDate1(today.toISOString().split("T")[0]);
-  }, [today]);
+  // useEffect(() => {
+  //   setDate1(today.toISOString().split("T")[0]);
+  // }, [today]);
 
-  useEffect(() => {
-    const minEndDate = new Date(today);
-    minEndDate.setDate(today.getDate() + 1);
-    minEndDate.toISOString().split("T")[0];
-    setDate2(minEndDate);
-  }, [today]);
+  // useEffect(() => {
+  //   const minEndDate = new Date(today);
+  //   minEndDate.setDate(today.getDate() + 1);
+  //   minEndDate.toISOString().split("T")[0];
+  //   setDate2(minEndDate);
+  // }, [today]);
 
   if (mode === "flight") {
     return (
