@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button, TabButton } from "@components/Buttons";
 import { SearchBar } from "@components/SearchBar";
 
+import { Footer } from "@/components/Footer";
 import { HotelSVG } from "@/assets/svg/Hotel";
 import { PlaneSVG } from "@/assets/svg/Plane";
 
@@ -75,6 +76,7 @@ export default function Home() {
         </div>
         <SearchBar mode={mode} />
       </div>
+      <Footer />
     </main>
   );
 }

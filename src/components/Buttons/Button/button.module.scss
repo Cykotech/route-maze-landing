@@ -3,7 +3,9 @@
 
 .button {
   &--primary {
+
     @include button;
+
     border: 1px solid $purple;
 
 
@@ -13,8 +15,10 @@
     }
   }
 
+
   &--white {
     @include button;
+
     background-color: $white;
 
     &:hover {
@@ -23,11 +27,13 @@
     }
   }
 
+
   &--colored {
     @include button;
     background-color: $purple;
     border: 2px solid $purple;
     color: $white;
+
 
     &:hover {
       background-color: white;

@@ -4,6 +4,7 @@ import styles from "./TextField.module.scss";
 export const TextField = ({
   label,
   id,
+
   placeholder,
   ...props
 }: TextFieldProps) => {
@@ -25,16 +26,16 @@ export const TextField = ({
       return "date";
     }
   };
+
   return (
-    <div className={styles.inputContainer}>
+    <div className={`${styles.inputContainer} ${className}`} {...props}>
       {label && (
-        <label
-          htmlFor={label}
-          className={styles.label}>
+        <label htmlFor={label} className={styles.label} {...labelProps}>
           {label}
         </label>
       )}
       <input
+
         className={styles.input}
         type={inputElementType(id)}
         placeholder={placeholder}
@@ -45,6 +46,7 @@ export const TextField = ({
         }}
         min="1"
         max="10"></input>
+
     </div>
   );
 };
